@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_1_vj", "2_1_vj\2_1_vj.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "321", "321\321.csproj", "{F53A9030-1E93-4335-95A8-35E544913C8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modeli_uvod", "modeli_uvod\modeli_uvod.csproj", "{0DD38060-5296-4D7F-8390-0F7F44114FB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F53A9030-1E93-4335-95A8-35E544913C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F53A9030-1E93-4335-95A8-35E544913C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F53A9030-1E93-4335-95A8-35E544913C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD38060-5296-4D7F-8390-0F7F44114FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD38060-5296-4D7F-8390-0F7F44114FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD38060-5296-4D7F-8390-0F7F44114FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD38060-5296-4D7F-8390-0F7F44114FB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
