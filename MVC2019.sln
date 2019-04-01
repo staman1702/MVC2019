@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "321", "321\321.csproj", "{F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modeli_uvod", "modeli_uvod\modeli_uvod.csproj", "{0DD38060-5296-4D7F-8390-0F7F44114FB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrojGodina", "BrojGodina\BrojGodina.csproj", "{09C67552-63E6-4ED9-9A08-FEF7C9F779AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{0DD38060-5296-4D7F-8390-0F7F44114FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DD38060-5296-4D7F-8390-0F7F44114FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD38060-5296-4D7F-8390-0F7F44114FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C67552-63E6-4ED9-9A08-FEF7C9F779AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C67552-63E6-4ED9-9A08-FEF7C9F779AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C67552-63E6-4ED9-9A08-FEF7C9F779AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C67552-63E6-4ED9-9A08-FEF7C9F779AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

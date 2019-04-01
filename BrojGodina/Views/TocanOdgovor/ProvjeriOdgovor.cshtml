@@ -1,0 +1,28 @@
+﻿@model string
+@{
+    ViewBag.Title = "ProvjeriOdgovor";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Provjeri odgovor</title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <label>koji je najmanji dvoznamenkasti broj?</label> <br />
+            <input type="radio" name="odgovor" value="99" /> 99<br />
+            <input type="radio" name="odgovor" value="10" /> 10<br />
+            <input type="radio" name="odgovor" value="11" /> 11<br />
+            <input type="radio" name="odgovor" value="40" /> 40<br />
+
+            <p><button type="submit">Pošalji</button></p>
+        </form>
+    </div>
+    <p>
+        <label style="font-weight:bold;">@Model</label>
+    </p>
+</body>
+</html>
