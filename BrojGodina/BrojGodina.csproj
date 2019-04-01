@@ -142,6 +142,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BrojGodinaController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NarudzbaArtiklaController.cs" />
     <Compile Include="Controllers\TocanOdgovorController.cs" />
     <Compile Include="Global.asax.cs">
@@ -187,6 +188,9 @@
     <Content Include="Views\BrojGodina\RacunajBrojGodina.cshtml" />
     <Content Include="Views\TocanOdgovor\ProvjeriOdgovor.cshtml" />
     <Content Include="Views\NarudzbaArtikla\NaruciArtikl.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
