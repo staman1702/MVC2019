@@ -1,0 +1,34 @@
+﻿@model int
+@{
+    ViewBag.Title = "RazvrstajSlucajniBroj";
+}
+
+<!Doctype HTML>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RazvrstajSlucajniBroj</title>
+</head>
+<body>
+    <div>
+        @if (Model <10)
+        {
+            <label>Slučajni broj @Model  je jednoznamenkast!</label>
+        }
+        else if (Model <100)
+        {
+            <label>Slučajni broj @Model  je dvoznamenkast!</label>
+        }
+        else if (Model <1000)
+        {
+            <label>Slučajni broj @Model je troznamenkast!</label>
+        }
+        else
+        {
+            <label>Slučajni broj je @Model.</label>
+        }
+    </div>
+</body>
+</html>
+
