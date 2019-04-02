@@ -144,6 +144,7 @@
     <Compile Include="Controllers\BrojGodinaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NarudzbaArtiklaController.cs" />
+    <Compile Include="Controllers\ParcijalniKontrolerController.cs" />
     <Compile Include="Controllers\TocanOdgovorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -191,6 +192,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\ParcijalniKontroler\PrikaziKosaricu.cshtml" />
+    <Content Include="Views\Shared\_Artikl.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
