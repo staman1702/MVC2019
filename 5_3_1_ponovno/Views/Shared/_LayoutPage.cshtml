@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_LayoutPage</title>
+</head>
+<body>
+    <div> 
+        <img src="~/Slike/preuzmi.png" />
+    </div>
+    <div>
+        <a href="/LayoutSection/Stranica1">Stranica1</a> |
+        <a href="/LayoutSection/Stranica1">Stranica2</a> 
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div>
+        @RenderSection("Detalji", false)
+    </div>
+</body>
+</html>
