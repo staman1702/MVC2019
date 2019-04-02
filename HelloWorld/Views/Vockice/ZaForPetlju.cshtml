@@ -1,0 +1,45 @@
+﻿@model string[]
+@{
+    ViewBag.Title = "Vockice";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ZaForPetlju</title>
+</head>
+<body>
+    <div> 
+        <h3>Popis košarice u foreach-u:</h3>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    </div>
+    <div>
+        <h3>Popis košarice u for-u:</h3>
+        <ul>
+            @for (int i=0; i<Model.Length; i++)
+            {
+                <li>@Model[i]</li>
+            }
+        </ul>
+    </div>
+    <div>
+        <h3>Popis košarice u while-u:</h3>
+        @{ int k = 0;
+        }
+        <ul>
+           @while (k<Model.Length)
+           {
+               <li>@Model[k]</li>
+               k++;
+           }
+        </ul>
+    </div>
+</body>
+</html>
