@@ -1,0 +1,63 @@
+﻿@model BrojGodina.Models.Osoba
+@{
+    ViewBag.Title = "FormHelper";
+}
+
+<h2>FormHelper</h2>
+
+<!Doctype html>
+
+<html>
+<head>
+    <meta name="Viewport" content="width=device-width" />
+    <title>FormHelper</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+            margin: 5px;
+        }
+        .redColor{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <div>
+                <label for="Ime">Ime:</label>
+                @Html.TextBox("Ime", Model.Ime)
+            </div>
+            <div>
+                <label for="Prezime">Prezime:</label>
+                @Html.TextBox("Prezime", Model.Prezime)
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                @Html.TextBox("Email", Model.Email)
+            </div>
+            <div>
+                <label for="MjestoStanovanja">MjestoStanovanja:</label>
+                @Html.DropDownList("MjestoStanovanja", new SelectList((string[])ViewBag.Mjesta), "-odaberite-")
+            </div>
+            <div>
+                <label for="Spol">Spol:</label>
+                @Html.RadioButton("Spol", "M", true) Muško
+                @Html.RadioButton("Spol", "Ž", false) Žensko
+            </div>
+            <div>
+                <label for="Zaposlen">Zaposlen:</label>
+                @Html.CheckBox("Zaposlen", false)
+            </div>
+            <input type="submit" value="Pošalji" />
+            
+        }
+    </div>
+    <p>
+        <label class="redColor">@ViewBag.Poruka</label>
+    </p>
+</body>
+</html>
+

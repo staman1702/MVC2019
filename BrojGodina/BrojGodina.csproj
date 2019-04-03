@@ -144,6 +144,7 @@
     <Compile Include="Controllers\BrojGodinaController.cs" />
     <Compile Include="Controllers\ChildActionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HtmlHelpersController.cs" />
     <Compile Include="Controllers\NarudzbaArtiklaController.cs" />
     <Compile Include="Controllers\ParcijalniKontrolerController.cs" />
     <Compile Include="Controllers\TocanOdgovorController.cs" />
@@ -151,6 +152,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Artikal.cs" />
+    <Compile Include="Models\Osoba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -196,6 +198,8 @@
     <Content Include="Views\ParcijalniKontroler\PrikaziKosaricu.cshtml" />
     <Content Include="Views\Shared\_Artikl.cshtml" />
     <Content Include="Views\ChildAction\ChildActionView.cshtml" />
+    <Content Include="Views\HtmlHelpers\FormHelper.cshtml" />
+    <Content Include="Views\HtmlHelpers\StrongTypeFormHelper.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

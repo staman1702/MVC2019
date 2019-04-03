@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("OdrediGrupuProizvoda", "ChildAction", FormMethod.Post))
+{
+<form>
+    
+    @Html.CheckBox("Prvi", true) Checkbox vec checkirani<br />
+    @Html.CheckBox("Drugi", false) checkbox dva koji nije checkiran u kodu<br />
+    @Html.RadioButton("imeradia", "val1", true) button true <br />
+    @Html.RadioButton("imeradia", "val2", false) button false1<br />
+    @Html.RadioButton("imeradia", "val3", false) button false2<br />
+    @Html.RadioButton("imeradia", "val4", false) button false3<br />
+    @Html.Hidden("pass") <p style="color:white;">
+    skriveno polje!!!</p><br />
+    @Html.TextBox("text-boks") ovdje ide tekst u box<br />
+    @Html.TextArea("Prvitext-area true", "Ovo je neki tekst \n koji\n je u novo redu", 10, 15, null) <br />
+    @Html.DropDownList("dropdowner", new SelectList(new[] { "MUško", "žensko" }), "Odaberi spol" ) <br />
+    
+    @Html.ListBox("dropdowner", new MultiSelectList(new[] { "MUško", "žensko", "Pan", "Poly", "Androgen", "NEspol" }), "Odaberi spol") <br />
+   
+    
+</form>
+}
+

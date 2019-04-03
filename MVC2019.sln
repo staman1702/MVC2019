@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_vj", "5_2_vj\5_2_vj.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_3_1_ponovno", "5_3_1_ponovno\5_3_1_ponovno.csproj", "{C296A575-91A6-4C64-934F-EE034CEE449B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helperi", "helperi\helperi.csproj", "{EBD05A54-5E60-48DD-BCC3-866A937E2B0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C296A575-91A6-4C64-934F-EE034CEE449B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C296A575-91A6-4C64-934F-EE034CEE449B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C296A575-91A6-4C64-934F-EE034CEE449B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD05A54-5E60-48DD-BCC3-866A937E2B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD05A54-5E60-48DD-BCC3-866A937E2B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD05A54-5E60-48DD-BCC3-866A937E2B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD05A54-5E60-48DD-BCC3-866A937E2B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
