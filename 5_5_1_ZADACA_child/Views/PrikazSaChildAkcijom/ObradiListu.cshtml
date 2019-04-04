@@ -1,0 +1,46 @@
+﻿@using _5_5_1_ZADACA_child.Models
+@model List<Artikal>
+@{
+    ViewBag.Title = "ObradiListu";
+}
+<h2>ObradiListu</h2>
+<!Doctype html>
+
+<html>
+<head>
+    <title>ObradiListu</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        #tArtikal th{
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table id="tArtikal">
+            <caption>Lista Artikala</caption>
+            <tr>
+                <th>Naziv</th>
+                <th>Cijena</th>
+                <th>Kategorija</th>
+            </tr>
+            @foreach (Artikal item in Model)
+            {
+                <tr>
+                    <td>@item.Naziv</td>
+                    <td>@item.Cijena</td>
+                    <td>@Html.Action("OdrediKategoriju", item)</td>
+                </tr>
+
+            }
+        </table>
+    </div>
+</body>
+</html>
+
