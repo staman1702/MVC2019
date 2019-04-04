@@ -1,0 +1,28 @@
+﻿@model BrojGodina.Models.OsobaTempl
+@{
+    ViewBag.Title = "EditorModelView";
+}
+<h2>EditorModelView</h2>
+<!Doctype Html>
+<html>
+<head>
+    <title>EditorModelView</title>
+    <style>
+        label {
+            width: 150px;
+            padding-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        { 
+            @Html.EditorForModel()
+            <input type="submit" value="Pošalji" />
+         }
+        </div>
+    </body>
+</html>
+

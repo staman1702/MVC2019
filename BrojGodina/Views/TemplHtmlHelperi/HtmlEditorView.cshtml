@@ -1,0 +1,67 @@
+﻿@model BrojGodina.Models.OsobaTempl
+@{
+    ViewBag.Title = "HtmlEditorView";
+}
+<h2>HtmlEditorView</h2>
+<!Doctype Html>
+<html>
+<head>
+    <title>HtmlEditorView</title>
+    <style>
+        label {
+            width: 150px;
+            padding-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h3>Unos varijabli:</h3>
+    @using (Html.BeginForm())
+    {
+        <div>
+            <label>Id: </label>
+            @Html.Editor("OsobaID")
+        </div>
+        <div>
+            <label>Ime: </label>
+            @Html.Editor("Ime")
+        </div>
+        <div>
+            <label>Prezime: </label>
+            @Html.Editor("Prezime")
+        </div>
+        <div>
+            <label>Email: </label>
+            @Html.Editor("Email")
+        </div>
+        <div>
+            <label>Mjesto Stanovanja: </label>
+            @Html.EditorFor(x=>x.MjestoStanovanja)
+        </div>
+        <div>
+            <label>Spol: </label>
+            @Html.EditorFor(x => x.Spol)
+        </div>
+        <div>
+            <label>Zaposlen: </label>
+            @Html.EditorFor(x => x.Zaposlen)
+        </div>
+        <div>
+            <label>Datum Rođenja: </label>
+            @Html.EditorFor(x => x.DatumRodjenja)
+        </div>
+        <div>
+            <label>Napomena: </label>
+            @Html.EditorFor(x => x.Napomena)
+        </div>
+
+      
+            <input type="Submit" value="Pošalji"/>
+    
+    }
+</body>
+</html>
+
+
+
