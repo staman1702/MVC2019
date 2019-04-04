@@ -1,0 +1,50 @@
+﻿@using _5_5_1_ZADACA_child.Models
+@model List<Artikal>
+@{
+    ViewBag.Title = "DodajArtikl";
+}
+<h2>DodajArtikl</h2>
+<!Doctype Html>
+<html>
+<head>
+    <title>DodajArtikl</title>
+    <style>
+        style >
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        #tArtikal th {
+            background-color: lightgrey;
+        }
+    </style>    
+</head>
+<body>
+    <h3>Lista artikala:</h3>
+    <div>
+        <table id="tArtikal">
+            <tr>
+                <th>Kategorija</th>
+                <th>Naziv</th>
+                <th>Cijena</th>
+                <th>Količina</th>
+            </tr>
+            @foreach (Artikal item in (List<Artikal>)Model)
+            {
+            <tr>
+                <td>@item.Kategorija</td>
+                <td>@item.Naziv</td>
+                <td>@string.Format("{0:N2}", item.Cijena)</td>
+                <td>@item.Kolicina</td>
+            </tr>
+            }
+
+        </table>
+    </div>
+    <p>
+        <a href="/ListaArtikala/UnesiArtikl">Unos novog artikla</a>
+    </p>
+</body>
+</html>

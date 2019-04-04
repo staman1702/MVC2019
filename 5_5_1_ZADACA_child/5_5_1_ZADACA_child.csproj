@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ListaArtikalaController.cs" />
     <Compile Include="Controllers\PrikazSaChildAkcijomController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -120,6 +121,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\PrikazSaChildAkcijom\ObradiListu.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\ListaArtikala\UnesiArtikl.cshtml" />
+    <Content Include="Views\ListaArtikala\DodajArtikl.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

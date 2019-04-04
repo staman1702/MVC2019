@@ -12,13 +12,13 @@ namespace _5_5_1_ZADACA_child.Controllers
         // GET: PrikazSaChildAkcijom
         public ActionResult ObradiListu()
         {
-            List<Artikal> ListaArtikala = new List<Artikal>()
+            List<Artikal> listaArtikala = new List<Artikal>()
             {
                 new Artikal(){Naziv="Seka", Cijena=8.99M, Kategorija="Čokolada" },
                 new Artikal(){Naziv="Jadro", Cijena=10.99M, Kategorija="Keks"},
                 new Artikal(){Naziv="Braco", Cijena=8.99M, Kategorija="Čokolada"}
             };            ;
-            return View(ListaArtikala);
+            return View(listaArtikala);
         }
 
         [ChildActionOnly]
