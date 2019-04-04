@@ -145,6 +145,7 @@
     <Compile Include="Controllers\ChildActionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HtmlHelpersController.cs" />
+    <Compile Include="Controllers\MetaDataHtmlHelperController.cs" />
     <Compile Include="Controllers\NarudzbaArtiklaController.cs" />
     <Compile Include="Controllers\ParcijalniKontrolerController.cs" />
     <Compile Include="Controllers\TemplHtmlHelperiController.cs" />
@@ -155,6 +156,7 @@
     <Compile Include="Models\Adresa.cs" />
     <Compile Include="Models\Artikal.cs" />
     <Compile Include="Models\Osoba.cs" />
+    <Compile Include="Models\OsobaMeta.cs" />
     <Compile Include="Models\OsobaTempl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -206,6 +208,8 @@
     <Content Include="Views\TemplHtmlHelperi\HtmlEditorView.cshtml" />
     <Content Include="Views\TemplHtmlHelperi\HtmlLabelDisplay.cshtml" />
     <Content Include="Views\TemplHtmlHelperi\EditorModelView.cshtml" />
+    <Content Include="Views\MetaDataHtmlHelper\MetaDataView.cshtml" />
+    <Content Include="Views\MetaDataHtmlHelper\HtmlLabelDisplay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,35 @@
+﻿@model BrojGodina.Models.OsobaMeta
+    @{
+        ViewBag.Title = "MetaDataView";
+    }
+    <h2>MetaDataView</h2>
+    <!Doctype Html>
+    <html>
+    <head>
+        <title>MetaDataView</title>
+        <style>
+            label {
+                width: 150px;
+                padding-top: 10px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>@Html.LabelForModel()</h2>
+        <div>
+            @using (Html.BeginForm())
+            {
+                <div>
+                    @Html.EditorForModel()
+                </div>
+                <div>
+                    @Html.EditorFor(x=>x.AdresaOsobe)
+                </div>
+                <input type="submit" value="posalji" />
+            }
+        </div>
+   </body>
+</html>
+
+
