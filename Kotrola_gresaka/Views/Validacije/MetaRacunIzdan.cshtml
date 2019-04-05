@@ -1,0 +1,36 @@
+﻿@model Kotrola_gresaka.Models.MetaRacun
+@{
+    ViewBag.Title = "MetaRacunIzdan";
+}
+
+
+<style>
+    label {
+        width: 150px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+</style>
+
+<h3>Racun @Html.DisplayFor(x => x.BrojRacuna) izdan!</h3><br />
+<h3>Podaci računa:</h3>
+
+<div>
+    @Html.LabelFor(x => x.Datum)
+    @Html.DisplayFor(x => x.Datum)
+</div>
+<div>
+    @Html.LabelFor(x => x.Zaposlenik)
+    @Html.DisplayFor(x => x.Zaposlenik)
+</div>
+<div>
+    @Html.LabelFor(x => x.Kupac)
+    @Html.DisplayFor(x => x.Kupac)
+</div>
+<div>
+    @Html.LabelFor(x => x.Cijena)
+    @Html.DisplayFor(x => x.Cijena)
+</div>
+
+
+

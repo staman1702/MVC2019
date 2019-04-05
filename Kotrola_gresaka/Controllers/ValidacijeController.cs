@@ -15,6 +15,7 @@ namespace Kotrola_gresaka.Controllers
             return View(new Racun() { Datum = DateTime.Now, BrojRacuna = "/" + DateTime.Now.Year.ToString() });
         }
 
+
         [HttpPost]
         public ViewResult IzdavanjeRacuna(Racun racun, string id)
         {
@@ -64,5 +65,32 @@ namespace Kotrola_gresaka.Controllers
         {
             return View(new Racun() { Datum = DateTime.Now, BrojRacuna = "/" + DateTime.Now.Year.ToString() });
         }
+
+        // GET: Validacije
+        public ActionResult MetaIzdavanjeRacuna()
+        {
+            return View(new MetaRacun() { Datum = DateTime.Now, BrojRacuna = "/" + DateTime.Now.Year.ToString() });
+        }
+
+
+        [HttpPost]
+        public ViewResult MetaIzdavanjeRacuna(MetaRacun metaracun, string id)
+        {
+            
+            //ukupna provjera validacije
+            if (ModelState.IsValid)
+            {
+                return View("MetaRacunIzdan", metaracun);
+            }
+          
+                else
+                {
+                    return View();
+                }
+            
+
+
+        }
+        
     }
 }
