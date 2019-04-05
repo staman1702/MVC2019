@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helperi", "helperi\helperi.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_5_1_ZADACA_child", "5_5_1_ZADACA_child\5_5_1_ZADACA_child.csproj", "{065A1932-200C-4B87-B519-F219FF1D5D92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotrola_gresaka", "Kotrola_gresaka\Kotrola_gresaka.csproj", "{DD63D5F2-D572-4232-A2F5-9861D1E93660}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{065A1932-200C-4B87-B519-F219FF1D5D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{065A1932-200C-4B87-B519-F219FF1D5D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{065A1932-200C-4B87-B519-F219FF1D5D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD63D5F2-D572-4232-A2F5-9861D1E93660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD63D5F2-D572-4232-A2F5-9861D1E93660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD63D5F2-D572-4232-A2F5-9861D1E93660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD63D5F2-D572-4232-A2F5-9861D1E93660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

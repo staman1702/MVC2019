@@ -1,0 +1,46 @@
+﻿@model Kotrola_gresaka.Models.Racun
+    @{
+        ViewBag.Title = "IzdavanjeRacuna";
+        Html.EnableClientValidation(false);
+    }
+  
+        
+        <style>
+            label {
+                width: 150px;
+                padding-top: 10px;
+                display: inline-block;
+            }
+        </style>
+
+<h2>IzdavanjeRacuna</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <div>
+        <label>Broj računa:</label>
+        @Html.EditorFor(x=>x.BrojRacuna)
+    </div>
+    <div>
+        <label>Datum:</label>
+        @Html.EditorFor(x => x.Datum)
+    </div>
+    <div>
+        <label>Zaposlenik:</label>
+        @Html.EditorFor(x => x.Zaposlenik)
+    </div>
+    <div>
+        <label>Kupac:</label>
+        @Html.EditorFor(x => x.Kupac)
+    </div>
+    <div>
+        <label>Cijena:</label>
+        @Html.EditorFor(x => x.Cijena)
+    </div>
+
+    <input type="submit" value="Pošalji" />
+}
+
+
+
+
