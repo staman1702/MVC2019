@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_5_1_ZADACA_child", "5_5_1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotrola_gresaka", "Kotrola_gresaka\Kotrola_gresaka.csproj", "{DD63D5F2-D572-4232-A2F5-9861D1E93660}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADONET_spajanje_na_bazu", "ADONET_spajanje_na_bazu\ADONET_spajanje_na_bazu.csproj", "{7E741402-A056-4A24-B299-9015BA0D8D71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{DD63D5F2-D572-4232-A2F5-9861D1E93660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD63D5F2-D572-4232-A2F5-9861D1E93660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD63D5F2-D572-4232-A2F5-9861D1E93660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E741402-A056-4A24-B299-9015BA0D8D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E741402-A056-4A24-B299-9015BA0D8D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E741402-A056-4A24-B299-9015BA0D8D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E741402-A056-4A24-B299-9015BA0D8D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
