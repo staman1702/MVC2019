@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div> 
+        @ViewBag.Message
+    </div>
+    <div>
+        @Html.ActionLink("Kreiraj tecaj", "Create", "SqlCommandObjectController");
+        <br />
+        @Html.ActionLink("Uredi tecaj", "Edit", "SqlCommandObjectController");
+        <br />
+        @Html.ActionLink("Obrisi tecaj", "Delete", "SqlCommandObjectController");
+        <br />
+        @Html.ActionLink("Prikazi zbroj tecajeva", "Count", "SqlCommandObjectController");
+        <br />
+
+    </div>
+
+</body>
+</html>
