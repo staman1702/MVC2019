@@ -1,0 +1,71 @@
+﻿@model string
+@{
+    ViewBag.Title = "Izracunaj";
+}
+<!Doctype html>
+<html>
+<head>
+    <title>Izračunaj</title>
+    <style>
+        label {
+            width: 150px;
+            padding-top: 10px;
+            display: inline-block;
+        }
+        input[type-submit]{
+            width:40px;
+            text-align:center;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Kalkulator:</h3>
+    <form method="post">
+        <div>
+            <label>Broj 1: </label><input type="text" name="broj1" value="@ViewBag.Broj1" />
+        </div>
+        <div>
+            <label>Broj 2: </label><input type="text" name="broj2" value="@ViewBag.Broj2" />
+        </div>
+        <br />
+        <div>
+            <input type="submit" name="operacija" value="+" />
+            <input type="submit" name="operacija" value="-" />
+            <input type="submit" name="operacija" value="*" />
+            <input type="submit" name="operacija" value="/" />
+        </div>
+    </form>
+    <br />
+    <div>
+        @if (Model != null)
+        {
+            <hr />
+            @:Rezultat:
+            switch (Model)
+            {
+                case "+":
+                    <strong>@(string.Format("{0:N2}", ((decimal)ViewBag.Broj1 + (decimal)ViewBag.Broj2)))</strong>
+                    break;
+
+                case "-":
+                    <strong>@(string.Format("{0:N2}", ((decimal)ViewBag.Broj1 - (decimal)ViewBag.Broj2)))</strong>
+                    break;
+
+                case "*":
+                    <strong>@(string.Format("{0:N2}", ((decimal)ViewBag.Broj1 * (decimal)ViewBag.Broj2)))</strong>
+                    break;
+
+                case "/":
+                    <strong>@(string.Format("{0:N2}", ((decimal)ViewBag.Broj1 / (decimal)ViewBag.Broj2)))</strong>
+                    break;
+
+                default:
+                    <strong>Nepoznata računska operacija</strong>
+                    break;
+            }
+        }
+    </div>
+</body>
+</html>
+
