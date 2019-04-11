@@ -9,7 +9,8 @@ namespace Adresar.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            //AutomaticMigrationsEnabled = false; ovaj dio smo rucno odradili, tj promjenili u true
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Adresar.Models.ApplicationDbContext context)
