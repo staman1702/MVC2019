@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Adresar.WcfService.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -11,8 +12,16 @@ namespace Adresar.WcfService
     // NOTE: In order to launch WCF Test Client for testing this service, please select KontaktService.svc or KontaktService.svc.cs at the Solution Explorer and start debugging.
     public class KontaktService : IKontaktService
     {
-        public void DoWork()
+        ApplicationDbContext _db = new ApplicationDbContext();
+
+        public List<Kontakt> DohvatiAktivneKontakte()
         {
+            var aktivniKontakti = from k in _db.Kontakti
+                                  where k.Aktivan
+                                  select k;
+
+            return aktivniKontakti.ToList();
         }
+        
     }
 }

@@ -15,6 +15,6 @@ namespace Adresar.WcfService.Models
 
         public virtual DbSet<Kontakt> Kontakti { get; set; }
     }
-    {
-    }
+    
+    
 }
